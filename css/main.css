@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffb5ff;
+  background: #ee62e3;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2388,4 +2388,41 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+body {
+  background: url("/images/星之终途 (6).jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+.site-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+/* 正文样式优化 */
+.post-body {
+  background-color: #fff; /* 设置文章背景颜色为白色 */
+  background-color: rgba(255,255,255,0.7); /* 半透明白色背景 */
+  padding: 2rem; /* 设置文章内容的内边距，确保内容不贴边 */
+  color: #111; /* 设置文章文字颜色为深色（使文字更容易阅读） */
+  min-height: 60vh; /* 设置文章区域的最小高度为视口高度的100%，确保当文章内容少时，背景不会消失 */
+  border-radius: 15px; /* 设置圆角效果，使文章区域的四个角呈圆形 */
+  box-shadow: 0 0 20px rgba(0,0,0,0.1); /* 添加阴影效果，给文章区域添加层次感 */
+  position: relative; /* 设置相对定位，以便以后可以在这个区域内使用绝对定位插入其他元素 */
+}
+/* 给文字加上阴影，使文字更加清晰 */
+.post-body {
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.7); /* 黑色阴影，提升文字可读性 */
+}
+/* 居中显示文章中的图片 */
+.post-body img {
+  display: block; /* 将图片显示为块级元素，使其独占一行 */
+  margin: 1rem auto; /* 设置图片的上下边距为1rem，左右边距为自动，确保图片水平居中 */
+  max-width: 150%; /* 确保图片的宽度不会超出容器的宽度，自动缩放 */
+  border-radius: 10px; /* 给图片添加圆角效果，使其更加柔和 */
 }
