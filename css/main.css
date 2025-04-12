@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #98ff71;
+  background: #b67385;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2425,4 +2425,8 @@ body {
   margin: 1rem auto; /* 设置图片的上下边距为1rem，左右边距为自动，确保图片水平居中 */
   max-width: 150%; /* 确保图片的宽度不会超出容器的宽度，自动缩放 */
   border-radius: 10px; /* 给图片添加圆角效果，使其更加柔和 */
+}
+.post-meta time,
+.post-copyright {
+  color: #000 !important;
 }
